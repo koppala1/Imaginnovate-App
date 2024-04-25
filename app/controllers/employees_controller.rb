@@ -1,6 +1,5 @@
 class EmployeesController < ApplicationController
-  #before_action :set_employee, only: [:show, :update, :destroy]
-
+ ##before_action :set_employee, only: [:show, :update, :destroy]
   def index
     @employees = Employee.all
     render json: @employees
@@ -27,7 +26,7 @@ class EmployeesController < ApplicationController
     @employee.destroy
   end
 
-   def show
+  def show
    @employee = Employee.all
    render json: @employee
   end

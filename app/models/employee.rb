@@ -3,5 +3,6 @@ class Employee < ApplicationRecord
   validates :email, format: { with: URI::MailTo::EMAIL_REGEXP, message: "only allows valid emails" }
   validates :phone_numbers, presence: true
   validates :salary, numericality: { greater_than: 0 }
-end
+
+end #class end
 
